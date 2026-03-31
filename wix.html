@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RubberSuppIN – Natural Rubber Specialists</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.5; color: #111; }
+    header, footer, section { padding: 60px 20px; }
+    header, footer { background: #050b11; color: #fff; }
+    main { max-width: 1080px; margin: 0 auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; max-width: 1080px; margin: 0 auto; }
+    nav ul { list-style: none; display: flex; gap: 24px; }
+    nav a { color: #fff; text-decoration: none; font-size: 14px; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero { display: grid; gap: 32px; align-items: center; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+    .hero h1 { font-size: 32px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .hero p { margin-top: 16px; max-width: 480px; }
+
+    .section-title { font-size: 24px; margin-bottom: 24px; }
+
+    .services-grid {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .service-card {
+      border-top: 2px solid #ddd;
+      padding-top: 16px;
+    }
+    .service-card h3 { font-size: 18px; margin-bottom: 8px; }
+    .service-card p { font-size: 14px; color: #444; }
+
+    .about { display: grid; gap: 32px; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+
+    .contact { display: grid; gap: 32px; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+    .contact form { display: grid; gap: 12px; }
+    .contact label { font-size: 14px; }
+    .contact input, .contact textarea {
+      width: 100%; padding: 8px 10px; border-radius: 4px; border: 1px solid #ccc; font: inherit;
+    }
+    .contact button {
+      margin-top: 8px; padding: 10px 16px; border-radius: 4px;
+      border: none; background: #111; color: #fff; cursor: pointer; font-size: 14px;
+    }
+
+    .running-text {
+      background: #111;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    footer p { font-size: 12px; text-align: center; margin-top: 8px; }
+
+    @media (max-width: 768px) {
+      .hero, .about, .contact { grid-template-columns: 1fr; }
+      nav { flex-direction: column; gap: 16px; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header id="top">
+    <nav>
+      <div class="logo">RubberSuppIN</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Running Text Section -->
+  <div class="running-text">
+    PREMIUM NATURAL RUBBER &nbsp;–&nbsp; GLOBAL LOGISTICS &nbsp;–&nbsp; QUALITY CONTROL
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div>
+        <h1>Global Specialists in Natural Rubber</h1>
+        <p>Connecting top‑tier rubber producers with global manufacturers through trusted sourcing, trade management, and technical support.</p>
+      </div>
+      <div>
+        <!-- Replace src with your hero image URL -->
+        <img src="hero-image.jpg" alt="Natural rubber logistics and supply chain" style="width:100%;height:auto;border-radius:8px;">
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Direct Sourcing</h3>
+          <p>Strategic sourcing of high‑grade natural rubber across key producing regions with vetted producers and transparent contracts.</p>
+        </article>
+        <article class="service-card">
+          <h3>Trade Management</h3>
+          <p>Facilitating reliable trade between global suppliers and industrial buyers with full document and shipment coordination.</p>
+        </article>
+        <article class="service-card">
+          <h3>Industrial Supply</h3>
+          <p>Ensuring consistent availability and timely distribution of technical natural rubber for industrial applications.</p>
+        </article>
+        <article class="service-card">
+          <h3>Product Certification</h3>
+          <p>Maintaining rigorous technical quality control standards and certification for each batch supplied.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about">
+      <div>
+        <h2 class="section-title">Expertise in Technical Natural Rubber Sourcing</h2>
+        <p>
+          RubberSuppIN functions as a specialized technical natural rubber sourcing and trade partner.  
+          We support manufacturers who depend on stable quality, predictable logistics, and compliant technical documentation.
+        </p>
+        <p>
+          Our team combines on‑ground presence in producing regions with close relationships across industrial buyers,  
+          making sure every shipment meets both commercial and technical expectations.
+        </p>
+      </div>
+      <div>
+        <!-- Replace src with your about image URL -->
+        <img src="about-image.jpg" alt="Team working on rubber sourcing operations" style="width:100%;height:auto;border-radius:8px;">
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact">
+      <div>
+        <h2 class="section-title">Strategic Trade &amp; Sourcing Inquiries</h2>
+        <p>Connect with our dedicated trade team in Kerala for sourcing projects, long‑term supply agreements, and technical support.</p>
+      </div>
+      <div>
+        <form>
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Company
+            <input type="text" name="company">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 RubberSuppIN. All rights reserved.</p>
+  </footer>
+</body>
+</html>
