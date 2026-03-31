@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MyRubberTradein</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0b0f19;
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#05070d;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+header h2{
+color:#3b82f6;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-size:15px;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin-bottom:30px;
+font-size:18px;
+color:#cbd5e1;
+}
+
+.hero button{
+padding:14px 30px;
+background:#3b82f6;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* SECTIONS */
+
+.section{
+padding:120px 60px;
+text-align:center;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.section p{
+max-width:800px;
+margin:auto;
+color:#cbd5e1;
+}
+
+/* CARDS */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#121826;
+padding:30px;
+width:260px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#1c2333;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#3b82f6;
+}
+
+/* CONTACT */
+
+.contact{
+background:#05070d;
+}
+
+.contact a{
+color:#3b82f6;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:25px;
+background:#02040a;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>MyRubberTradein</h2>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Direct Rubber Trade From Assam</h1>
+
+<p>
+MyRubberTradein connects rubber producers in Assam directly with factories across India,
+removing middlemen and ensuring transparent pricing, reliable supply chains,
+and better profits for both buyers and sellers.
+</p>
+
+<button onclick="document.getElementById('contact').scrollIntoView()">Contact Us</button>
+
+</section>
+
+
+<section class="section" id="about">
+
+<h2>About Us</h2>
+
+<p>
+MyRubberTradein is a direct trade platform that facilitates the supply of natural rubber
+from Assam to manufacturing factories across India. By eliminating intermediaries,
+we ensure better pricing, faster logistics, and transparent transactions between
+producers and industrial buyers.
+</p>
+
+</section>
+
+
+<section class="section" id="services">
+
+<h2>What We Do</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Direct Factory Supply</h3>
+<p>Rubber sourced directly from producers in Assam and delivered to factories without middlemen.</p>
+</div>
+
+<div class="card">
+<h3>Transparent Pricing</h3>
+<p>Buyers and sellers deal directly, ensuring fair market prices and higher profit margins.</p>
+</div>
+
+<div class="card">
+<h3>Reliable Logistics</h3>
+<p>Efficient transport coordination from Assam plantations to industrial buyers.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section contact" id="contact">
+
+<h2>Contact</h2>
+
+<p>
+For trade inquiries or partnerships, reach us at:
+</p>
+
+<br>
+
+<p>
+📧 <a href="mailto:milindsingh555@gmail.com">milindsingh555@gmail.com</a>
+</p>
+
+</section>
+
+
+<footer>
+
+© 2026 MyRubberTradein. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
